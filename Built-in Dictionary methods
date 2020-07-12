@@ -34,7 +34,7 @@
       dict1.setdefault('red', 10)       //10
       print(dict1)         //{'cyan': 1, 'violet': 2, 'green': 3, 'red': 10}
 
-===>update(dict2)	    //Appends dict2's key:value pairs to the calling dict
+===>update(dict2)	    //Appends dict2's key:value pairs to the calling dict. If already key is present ,it's value is updated with dict2.
       dict1 = {'cyan':1, 'violet':2, 'green':3}
       dict2 = {'red':4, 'white':5}
       dict1.update(dict2)
