@@ -15,6 +15,18 @@ The Set can contain any number and different types of items - integer, float, tu
 =======
 Elements can be added or removed from the set but cannot be changed.
 Set is a disordered, we cannot use indexing on sets. Sets do not support indexing.
+The elements in a set should be immutable i.e., they cannot be modified/changed.
+Hence, Lists cannot be used as elements of a set.
+set1 = set((("C", "C++"), ("Java", "OOPS")))
+print(type(set1))
+<class 'set'>
+set2 = set((["C", "C++"], ["Java", "OOPS", "Scala"]))
+//Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+  set2 = set((["C", "C++"], ["Java", "OOPS", "SCALA"]))
+  TypeError: unhashable type: 'list'
+=======
+
 
 numset = {1, 2, 3, 4, 5, 3, 2}
 print(numset)
