@@ -1,0 +1,46 @@
+//Built in Dictionary methods for efficient use of dictionary
+===> clear() = removes all elements of a dictionary
+      dict1 = {'Name' : "kranthi", "Age" : 21, "Gender" : "male"}
+      print(len(dict1))  // 3
+      dict1.clear()
+      print(len(dict1))  // 0
+
+===> copy() = returns a shallow copy of dictionary   // creates new object with same address parameters
+      dict1 = {'Name' : "kranthi", "Age" : 21, "Gender" : "male"}
+      dict2 = dict1.copy()
+      print(dict2)    // {'Name' : "kranthi", "Age" : 21, "Gender" : "male"}
+
+===> fromkeys(sequence,value)   // Create a new dictionary using keys from sequence and values set to value. It will set dict[key] = default, if key is not found
+      seq = ('one', 'two', 'three')
+      dict1 = dict.fromkeys(seq,0)
+      print(dict1)       // {'one': 0, 'two': 0, 'three': 0}
+    
+===> get(key, default = None)    //Returns a value for the key if found else return the default which is None
+      dict = {'cyan':1, 'violet':2, 'green':3}
+      print(“Value : %s “ % dict.get('violet'))   //Value : 2
+      print((“Value: %s“  %dict.get('red'))   //Value: None
+   
+===> items()	//Return a list of (key,value) tuple pairs
+      dict = {'cyan':1, 'violet':2, 'green':3}
+      print(dict.items())   //[('cyan', 1), ('green', 3), ('violet', 2)]
+
+===> keys()	  //Return a list of dictionary's keys
+      dict = {'cyan':1, 'violet':2, 'green':3}
+      print(dict.keys())  //['cyan', 'green', 'violet']
+
+===> setdefault(key, default = None)	            //This method is similar to the method get().It will set dict[key] = default, if key is not found                                 
+      dict1 = {'cyan':1, 'violet':2, 'green':3}
+      dict1.setdefault('violet', 10)    //2
+      dict1.setdefault('red', 10)       //10
+      print(dict1)         //{'cyan': 1, 'violet': 2, 'green': 3, 'red': 10}
+
+===>update(dict2)	    //Appends dict2's key:value pairs to the calling dict
+      dict1 = {'cyan':1, 'violet':2, 'green':3}
+      dict2 = {'red':4, 'white':5}
+      dict1.update(dict2)
+      print(dict1)        //{'cyan': 1, 'violet': 2, 'green': 3, 'red': 4, 'white': 5}
+
+
+===> values()	        //Returns a list of dictionary's values
+      dict1 = {'cyan': 1, 'violet': 2, 'green': 3, 'red': 4}
+      dict1.values()      //dict_values([1, 2, 3, 4])
