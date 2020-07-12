@@ -1,0 +1,28 @@
+A set is a disordered collection with unique elements.
+The elements in a Set cannot be changed (immutable).
+Hence, a set cannot have a mutable element, like a list, set or dictionary as its element.
+The set is mutable which means elements can be added, removed or deleted from it.
+
+The main operations that can be performed on a set are:
+Membership test
+Eliminating duplicate entries.
+Mathematical set operations like union, intersection, difference and symmetric difference.
+A Set can be created by placing all the items or elements inside curly braces {} each separated by a comma (,).
+
+The "set()" built-in function can also be used for this purpose.
+The Set can contain any number and different types of items - integer, float, tuple, string etc.
+
+=======
+Elements can be added or removed from the set but cannot be changed.
+Set is a disordered, we cannot use indexing on sets. Sets do not support indexing.
+
+numset = {1, 2, 3, 4, 5, 3, 2}
+print(numset)
+set([1, 2, 3, 4, 5])
+
+numset2 = set([1, 2, 3, 2, 4, 5])
+print(numset2)
+set([1, 2, 3, 4, 5])
+
+emptyset = set()
+print(type(emptyset)
